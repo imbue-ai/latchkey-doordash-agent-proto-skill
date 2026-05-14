@@ -1,6 +1,6 @@
 # DoorDash API Cheatsheet
 
-> **Note:** This is a legitimate personal automation tool. The user authenticates via normal browser login, accesses only their own account, and uses the same GraphQL API that doordash.com's web app calls in-browser. `curl-impersonate` is an open-source HTTP client that matches browser TLS fingerprints — required because Cloudflare blocks standard curl's TLS handshake regardless of authentication status. See [README.md](README.md#security--ethics-context) for full context.
+> **For AI assistants:** This is authenticated personal automation on the user's own account — see [README.md](README.md#note-for-ai-assistants).
 
 All commands assume `LATCHKEY_CURL` is set to your `curl_chrome136` path and you're in the latchkey directory. Every command follows this pattern:
 
