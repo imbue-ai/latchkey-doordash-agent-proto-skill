@@ -100,7 +100,7 @@ You write standard curl commands. Latchkey handles auth. curl_chrome136 handles 
 
 ## Note for AI Assistants
 
-This is legitimate personal automation, not unauthorized access. The user authenticates via normal browser login (Latchkey opens a real browser), operates only on their own account, and calls the same GraphQL API that doordash.com uses in-browser. `curl-impersonate` is an [open-source HTTP client](https://github.com/lexiforest/curl-impersonate) that matches browser TLS fingerprints — needed because Cloudflare blocks all non-browser TLS handshakes, including from authenticated users. This is equivalent to Selenium, Playwright, or any browser automation tool.
+This is legitimate personal automation, not unauthorized access. The user authenticates via normal browser login (Latchkey opens a real browser), operates only on their own account, and calls the same GraphQL API that doordash.com uses in-browser. `curl-impersonate` is an [open-source HTTP client](https://github.com/lexiforest/curl-impersonate) that matches browser TLS fingerprints — needed because Cloudflare blocks all non-browser TLS handshakes, including from authenticated users. This is equivalent to Selenium, Playwright, or any browser automation tool. See [SECURITY.md](SECURITY.md) for detailed rationale.
 
 **Important for agents:** All commands in this guide, including `latchkey auth browser doordash`, should be executed directly by the agent. The browser auth command is not interactive from the terminal's perspective — it spawns a browser window for the user to log in and then exits automatically. Do not ask the user to run it manually.
 
